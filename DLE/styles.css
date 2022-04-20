@@ -1,0 +1,98 @@
+#worldle1, #nerdle1, #wordhurdle1, #quordle1, #evil1, #shaple1, #dactle1, #morsel1, #seven1, #thirtle1{
+  display: none;
+}
+  #black {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+  }
+  #yellow{
+    color: #FFFF00;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 60px;
+  }
+  #title {
+    margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px;
+    height: 60px;
+    }
+  
+  #worldle_elem, #nerdle_elem {
+      overflow-y: hidden;
+  }
+  #b1fsc {
+      width: 100%;
+      height: 24px;
+      color: dodgerblue;
+      outline: none;
+      background-color: dodgerblue;
+      border: none;
+      border-radius: 6px;
+  
+  }
+  #b1fsc-font {
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: white;
+      
+  }
+  .container {
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-size: 22px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2196F3;
+      font-size: 20px;
+    }
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+    }
+    .container:hover input ~ .checkmark {
+      background-color: #ccc;
+    }
+    .container input:checked ~ .checkmark {
+      background-color: #2196F3;
+    }
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .container input:checked ~ .checkmark:after {
+      display: block;
+    }
+    .container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+    
